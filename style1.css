@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    height: 100vh; /* 100% da viewport height */
+}
+
+.sidebar {
+    float: left;
+    width: 20%;
+    height: 100%;
+    background-color: #3498db; /* Azul claro */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.content {
+    float: right;
+    width: 80%;
+    height: 100%;
+    background-color: #f0f0f0; /* Cinza claro */
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

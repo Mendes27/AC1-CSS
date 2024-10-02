@@ -1,0 +1,74 @@
+/* Reset básico de estilo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo do menu superior */
+#menu-superior {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#menu-superior a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+/* Estilo do menu lateral */
+#menu-lateral {
+    position: fixed;
+    top: 50px; /* Considera a altura do menu superior */
+    left: 0;
+    width: 200px;
+    height: calc(100% - 100px); /* Considera a altura do rodapé e do menu superior */
+    background-color: #444;
+    color: white;
+    padding: 20px;
+}
+
+#menu-lateral ul {
+    list-style-type: none;
+}
+
+#menu-lateral ul li {
+    margin-bottom: 15px;
+}
+
+#menu-lateral ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilo da área de conteúdo */
+#conteudo {
+    margin-left: 220px; /* Deixa espaço para o menu lateral */
+    margin-top: 60px; /* Deixa espaço para o menu superior */
+    padding: 20px;
+    background-color: #f4f4f4;
+    height: calc(100vh - 120px); /* Considera a altura do menu superior e do rodapé */
+}
+
+/* Estilo do rodapé */
+#rodape {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
